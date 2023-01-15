@@ -1,5 +1,8 @@
-import com.guru.composecookbook.build.configurations.ProjectConfigs
+import com.guru.composecookbook.plugin.configurations.ProjectConfigs
 import com.guru.composecookbook.build.dependencies.*
+import com.guru.composecookbook.plugin.dependencies.addComposeOfficialDependencies
+import com.guru.composecookbook.plugin.dependencies.addComposeThirdPartyDependencies
+import com.guru.composecookbook.plugin.dependencies.addKotlinDependencies
 
 plugins {
     id("com.android.application")
@@ -9,12 +12,12 @@ plugins {
 
 android {
 
-    compileSdk = ProjectConfigs.compileSdkVersion
+    compileSdk = com.guru.composecookbook.plugin.configurations.ProjectConfigs.compileSdkVersion
 
     defaultConfig {
-        applicationId = ProjectConfigs.applicationId
-        minSdk = ProjectConfigs.minSdkVersion
-        targetSdk = ProjectConfigs.targetSdkVersion
+        applicationId = com.guru.composecookbook.plugin.configurations.ProjectConfigs.applicationId
+        minSdk = com.guru.composecookbook.plugin.configurations.ProjectConfigs.minSdkVersion
+        targetSdk = com.guru.composecookbook.plugin.configurations.ProjectConfigs.targetSdkVersion
         versionCode = 1
         versionName = "1.0"
         multiDexEnabled = true
@@ -47,7 +50,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = ProjectConfigs.kotlinCompilerExtensionVersion
+        kotlinCompilerExtensionVersion = com.guru.composecookbook.plugin.configurations.ProjectConfigs.kotlinCompilerExtensionVersion
     }
     lint {
         abortOnError = false

@@ -1,4 +1,4 @@
-import com.guru.composecookbook.build.configurations.ProjectConfigs
+import com.guru.composecookbook.plugin.configurations.ProjectConfigs
 
 plugins {
     id("com.android.library")
