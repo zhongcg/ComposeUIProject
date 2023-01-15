@@ -1,5 +1,5 @@
 import com.guru.composecookbook.plugin.configurations.ProjectConfigs
-import com.guru.composecookbook.build.dependencies.*
+import com.guru.composecookbook.plugin.dependencies.*
 import com.guru.composecookbook.plugin.dependencies.addComposeOfficialDependencies
 import com.guru.composecookbook.plugin.dependencies.addComposeThirdPartyDependencies
 import com.guru.composecookbook.plugin.dependencies.addKotlinDependencies
